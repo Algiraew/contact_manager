@@ -1,0 +1,38 @@
+.main {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.container {
+  width: 250px;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.main_cont {
+  padding: 10px;
+  align-items: center;
+}
+
+.cont_item {
+  text-align: left;
+}
+
+.btn_del {
+  width: 100%;
+  font-size: 15px;
+  
+
+ 
+}
+
+.btn_del:hover {
+  background-color: rgb(238, 231, 44);
+  transition: .4s;
+}
+
+.btn_add {
+  width: 148px;
+}
