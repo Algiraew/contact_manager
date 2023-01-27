@@ -8,15 +8,13 @@ import { updateContact } from "../features/contact.slice";
 const ContactEdit = ({ setEdit, contact, id }) => {
   const dispatch = useDispatch();
 
-
   const [FirstName, setFirstName] = useState(contact.FirstName);
   const [LastName, setLastName] = useState(contact.LastName);
   const [Phone, setPhone] = useState(contact.Phone);
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(updateContact({FirstName, LastName, Phone, id}))
-
+    dispatch(updateContact({ FirstName, LastName, Phone, id }));
   };
   const handleChangeName = (e) => {
     setFirstName(e.target.value);
@@ -29,20 +27,18 @@ const ContactEdit = ({ setEdit, contact, id }) => {
     setPhone(e.target.value);
   };
 
-
-  console.log(FirstName);
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div>
         <input
-          defaultValue={contact.FirstName} 
+          defaultValue={contact.FirstName}
           onChange={(e) => handleChangeName(e)}
           type="text"
         />
       </div>
       <div>
         <input
-          defaultValue={contact.LastName} 
+          defaultValue={contact.LastName}
           onChange={(e) => handleChangeLastName(e)}
           type="text"
         />

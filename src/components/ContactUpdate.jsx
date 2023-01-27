@@ -17,21 +17,18 @@ const ContactUpdate = () => {
   }, [dispatch, id]);
 
   const handleUpdate = (e) => {
-   setEdit(true)
+    setEdit(true);
   };
 
   return edit ? (
-    <ContactEdit contact={contact} setEdit={setEdit} id={id}/>
+    <ContactEdit contact={contact} setEdit={setEdit} id={id} />
   ) : (
     <div className={styles.contact_item}>
       <div className={styles.container}>
         <p className={styles.cont_item}>{contact.FirstName}</p>
         <p className={styles.cont_item}>{contact.LastName}</p>
         <p className={styles.cont_item}>{contact.Phone}</p>
-        <button
-          className={styles.btn_del}
-          onClick={handleUpdate}
-        >
+        <button className={styles.btn_del} onClick={handleUpdate}>
           Изменить данные
         </button>
       </div>

@@ -23,14 +23,11 @@
 .btn_del {
   width: 100%;
   font-size: 15px;
-  
-
- 
 }
 
 .btn_del:hover {
   background-color: rgb(238, 231, 44);
-  transition: .4s;
+  transition: 0.4s;
 }
 
 .btn_add {

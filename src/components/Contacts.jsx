@@ -30,16 +30,16 @@ const Contacts = () => {
       <div className={styles.main}>
         {contacts.map((contact) => {
           return (
-              <div key={contact._id} className={styles.main_cont}>
-                <Link to={contact._id}>
-                  <div className={styles.container}>
-                    <p className={styles.cont_item}>{contact.FirstName}</p>
-                    <p className={styles.cont_item}>{contact.LastName}</p>
-                    <p className={styles.cont_item}>{contact.Phone}</p>
-                  </div>
-                </Link>
-                <button className={styles.btn_del}>Удалить контакт</button>
-              </div>
+            <div key={contact._id} className={styles.main_cont}>
+              <Link to={contact._id}>
+                <div className={styles.container}>
+                  <p className={styles.cont_item}>{contact.FirstName}</p>
+                  <p className={styles.cont_item}>{contact.LastName}</p>
+                  <p className={styles.cont_item}>{contact.Phone}</p>
+                </div>
+              </Link>
+              <button className={styles.btn_del}>Удалить контакт</button>
+            </div>
           );
         })}
       </div>
